@@ -13,7 +13,7 @@ const projects = [
     }
 ];
 
-export default function ProjectSection() {
+export function ProjectSection() {
     return (
         <div className="px-4 md:px-0 py-12 w-full">
             <h2 className="text-3xl font-bold mb-8">Projects</h2>

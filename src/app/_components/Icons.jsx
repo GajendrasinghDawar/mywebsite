@@ -164,7 +164,7 @@ export function Tools({ props }) {
 
 export const Home2 = (props) => (
   <svg
-    className="sm:h-6 sm:w-6"
+    className="h-5 w-5"
     width={ 56 }
     height={ 56 }
     viewBox="0 0 28 28"

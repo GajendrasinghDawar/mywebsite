@@ -1,6 +1,4 @@
-import { Tools } from "@/components/Icons"
-
-export default function Skills() {
+export function Skills() {
     return (
         <div className="w-full px-4 md:px-0">
             <div className="flex items-center gap-2 mb-8">
