@@ -1,4 +1,4 @@
-import { geistSans, geistMono } from "@/app/_fonts/font"
+import { geistSans, geistMono } from "@/fonts/font"
 
 export function Footer() {
     return (
