@@ -149,6 +149,10 @@ module.exports = {
       screens: {
         xs: "480px",
       },
+      fontFamily: {
+        sans: [ 'var(--font-eb-garamond)' ],
+      },
+
     },
   },
   plugins: [],
