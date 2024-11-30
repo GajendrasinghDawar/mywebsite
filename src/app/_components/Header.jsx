@@ -1,7 +1,7 @@
 import { Linkedin, Github, Home2 } from "@/components/Icons"
 import Image from "next/image"
 import Link from "next/link"
-import profilePic from "@/static/profile.jpg"
+import profilePic from "../_static/profile.jpg"
 
 export function Header() {
   return (

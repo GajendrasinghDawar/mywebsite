@@ -1,6 +1,6 @@
 import { eb_garamond } from "@/fonts/font"
 import "./globals.css"
-// import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react"
 
 import { Footer } from "@/components/Footer"
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       >
         { children }
         <Footer />
-        {/* <Analytics /> */ }
+        <Analytics />
       </body>
     </html>
   )
