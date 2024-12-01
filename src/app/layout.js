@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer"
 
 export const metadata = {
   title: "Gajendrasingh Dawar",
-  description: "It's a personal website of Gajendrasingh Dawar.",
+  description: "Personal website of Gajendrasingh Dawar, a web developer skilled in Javascript and with a foundation in  backend technologies(Nodejs, Python, PHP). based in Indore, (M.P.) India.",
 }
 
 export default function RootLayout({ children }) {

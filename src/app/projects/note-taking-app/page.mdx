@@ -1,5 +1,10 @@
 import { ExternalLink } from "@/components/ExternalLink"
 
+export const metadata = {
+  title: "Projects | Note Taking App",
+}
+
+
 # Note Taking App
 
 This is a Progressive Web App (PWA) built with React. It provides offline capabilities and can be installed locally on your device. I am learning PWA patterns to make web apps feel more like native apps using only web tools. So, this app is a kind of playground for me to apply learned PWA concepts.
@@ -10,19 +15,29 @@ See Live Demo
 
 ## Features
 
-1. Offline support
-2. Installable on desktop and mobile devices
+1. Offline support.
+2. Installable on desktop and mobile devices.
+3. Rich Text Editing support.
+6. Responsive design.
 
-## Used Technologies
+### Used Technologies
 
 - **React**: For building the user interface.
-- **Next.js**: For server-side rendering and static site generation.
-- **Service Worker**: For writing content in Markdown with JSX.
+- **ViteJs**: For bundling and static site generation.
+- **Service Worker**: For caching assets on client side Offline Support.
 - **Tailwind CSS**: For styling the application.
-- **Workbox**: For managing service workers and caching strategies.
 - **IndexedDB**: For storing notes offline.
 - **Vercel**: For deployment.
 
-## Source Code
+### Source Code
 
 You can find the source code on GitHub: <ExternalLink href="https://github.com/GajendrasinghDawar/Note-Keeper">Note-Keeper</ExternalLink>
+
+**Here are some  resources if you want to learn more about Progressive Web App design patterns:**
+
+- <ExternalLink href="https://web.dev/progressive-web-apps/">Web.dev: Progressive Web Apps</ExternalLink>
+
+- <ExternalLink href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">MDN Web Docs: Progressive Web Apps</ExternalLink>
+
+- <ExternalLink href="https://firt.dev/">Mr. Maximiliano Firtman's website</ExternalLink>
+
