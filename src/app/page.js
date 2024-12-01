@@ -5,7 +5,7 @@ import { Intro } from "@/components/Intro"
 
 export default function RootPage() {
     return (
-        <main className="md:mx-auto md:max-w-2xl">
+        <main className="px-4 md:px-0  mx-auto md:max-w-2xl">
           <Header />
           <Intro />
           <Skills />

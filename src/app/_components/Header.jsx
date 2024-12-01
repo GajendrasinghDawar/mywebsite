@@ -5,7 +5,7 @@ import profilePic from "../_static/profile.jpg"
 
 export function Header() {
   return (
-    <header className="w-full flex flex-col-reverse md:flex-row justify-start md:justify-between items-center px-4 md:px-0 mt-12">
+    <header className="w-full flex flex-col-reverse md:flex-row justify-start md:justify-between items-center  mt-10">
       <section className="flex flex-col h-full gap-4  ">
         <div>
           <h2 className={`mb-0`}>Gajendrasingh Dawar</h2>
@@ -41,7 +41,7 @@ function ProfileSection() {
       <Image
         src={profilePic}
         alt="Gajendrasingh Dawar"
-        className="object-contain rounded-lg"
+        className="object-contain rounded-lg select-none"
       />
     </section>
   )

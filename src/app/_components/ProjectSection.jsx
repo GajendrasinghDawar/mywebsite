@@ -17,7 +17,7 @@ const projects = [
 
 export function ProjectSection() {
   return (
-    <div className="px-4 md:px-0 pb-12 w-full">
+    <div className=" pb-12 w-full">
       <div className="flex items-center gap-4">
         <CanvasDotted />
         <h3 className="font-bold">Projects</h3>

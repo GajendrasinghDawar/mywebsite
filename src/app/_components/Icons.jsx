@@ -165,7 +165,7 @@ export function BackArrow({ props }) {
 export function Tools({ props }) {
   return (
     <svg
-      className="w-8 h-8 "
+      className="w-8 h-8"
       {...props}
       viewBox="0 0 512 512"
       width="64px"
