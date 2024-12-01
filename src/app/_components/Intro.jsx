@@ -3,7 +3,7 @@ import { HandWaving } from "@/components/Icons"
 export function Intro() {
   return (
     <article className="my-6">
-      <p className="font-medium text-lg md:text-2xl">
+      <p className="font-medium text-xl md:text-2xl">
         Hello <HandWaving className="h-5 w-5 inline-block align-baseline" />,
         I&apos;m a Web developer with a foundation in both backend and frontend
         technologies. Live in Khargone(M.P.), India.
