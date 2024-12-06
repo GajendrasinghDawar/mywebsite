@@ -11,48 +11,51 @@ html {
 }
 
 @layer base {
+  body {
+    @apply relative antialiased h-full w-full selection:text-grayA12 selection:bg-yellow5 break-words;
+  }
   h1 {
-    @apply text-3xl sm:text-4xl md:text-5xl font-bold my-4;
+    @apply text-3xl tracking-tight text-gray12 sm:text-4xl md:text-5xl font-bold my-4;
   }
 
   h2 {
-    @apply text-2xl sm:text-3xl md:text-4xl font-bold my-3;
+    @apply text-2xl tracking-tight text-gray12 sm:text-3xl md:text-4xl font-bold my-3;
   }
 
   h3 {
-    @apply text-xl sm:text-2xl md:text-3xl font-semibold my-3;
+    @apply text-xl tracking-normal text-gray12 sm:text-2xl md:text-3xl font-semibold my-3;
   }
 
   h4 {
-    @apply text-lg sm:text-xl md:text-2xl font-semibold my-3;
+    @apply text-lg tracking-normal text-gray12 sm:text-xl md:text-2xl font-semibold my-3;
   }
 
   h5 {
-    @apply text-base sm:text-lg md:text-xl font-semibold my-3;
+    @apply text-base tracking-normal sm:text-lg text-gray12 md:text-xl font-semibold my-3;
   }
 
   h6 {
-    @apply text-sm sm:text-base md:text-lg font-semibold my-3;
+    @apply text-sm tracking-normal sm:text-base text-gray12 md:text-lg font-semibold my-3;
   }
 
   p {
-    @apply text-lg sm:text-xl text-grayA12 leading-relaxed tracking-wide	 my-4;
+    @apply text-lg  sm:text-xl text-gray12 my-4 tracking-wide;
   }
 
   b {
-    @apply font-bold text-lg md:text-xl my-4;
+    @apply font-bold text-gray12 text-lg md:text-xl my-4  tracking-wide;
   }
 
   small {
-    @apply text-sm;
+    @apply text-gray12 text-sm;
   }
 
   ol {
-    @apply list-decimal list-inside my-4 pl-8 text-grayA12 text-lg md:text-xl;
+    @apply list-decimal list-inside my-4 pl-8 text-gray12 text-lg md:text-xl;
   }
 
   ul {
-    @apply list-disc list-inside my-4 pl-8 text-grayA12 text-lg md:text-xl;
+    @apply list-disc list-inside my-4 pl-8 text-gray12 text-lg md:text-xl;
   }
 
   li {
@@ -64,15 +67,15 @@ html {
   }
 
   blockquote {
-    @apply border-l-4 border-gray3 pl-4 italic my-4;
+    @apply border-l-4 border-gray11 pl-4 italic my-4;
   }
 
   pre {
-    @apply bg-gray1 p-4 rounded my-4;
+    @apply bg-gray11 p-4 rounded my-4;
   }
 
   code {
-    @apply bg-gray2 px-1 rounded;
+    @apply bg-gray4 px-1 rounded;
   }
 
   table {
@@ -81,10 +84,10 @@ html {
 
   th,
   td {
-    @apply border border-gray3 px-4 py-2;
+    @apply border border-gray6 px-4 py-2;
   }
 
   th {
-    @apply bg-gray1 font-semibold;
+    @apply bg-gray2 font-semibold;
   }
 }

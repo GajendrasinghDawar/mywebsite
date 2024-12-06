@@ -5,15 +5,15 @@ import profilePic from "../_static/profile.jpg"
 
 export function Header() {
   return (
-    <header className="w-full flex flex-col-reverse md:flex-row justify-start md:justify-between items-center  mt-10">
+    <header className="w-full flex flex-col-reverse md:flex-row justify-start md:justify-between items-center mt-4 md:mb-6">
       <section className="flex flex-col h-full gap-4  ">
         <div>
-          <h2 className={`mb-0`}>Gajendrasingh Dawar</h2>
+          <h2 className={`mb-0 tracking-normal`}>Gajendrasingh Dawar</h2>
           <div className="w-full flex items-center justify-center md:justify-start gap-2 mt-2">
             <section className="mb-1 md:mb-0">
               <Home2 />
             </section>
-            <h4 className="my-0 ">Indore, (M.P.) India</h4>
+            <h4 className="my-0">Indore, (M.P.) India</h4>
           </div>
         </div>
         <div className="flex flex-wrap justify-center md:justify-start gap-1">
