@@ -21,7 +21,7 @@ export function Header() {
             <Link
               key={item.link}
               href={item.link}
-              className="rounded-lg p-1 border border-yellow-800 cursor-pointer h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center mr-2"
+              className="rounded-lg p-1 border hover:border-yellow-900 hover:bg-yellow2 border-yellow-800 cursor-pointer h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center mr-2 transition duration-300"
               target="_blank"
               aria-label={`this is my ${item.name} link`}
             >
