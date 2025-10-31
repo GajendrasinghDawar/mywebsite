@@ -2,7 +2,6 @@
 
 - add view transitions
 - add also hindi subtiles eng/hi
-- make tailwind upgrade
 
 ## thoughts
 
