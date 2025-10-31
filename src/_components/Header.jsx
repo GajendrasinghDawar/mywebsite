@@ -1,4 +1,4 @@
-import { Linkedin, Github, Home2 } from "@/components/Icons"
+import { Linkedin, Github, Home2 } from "./Icons"
 import Image from "next/image"
 import Link from "next/link"
 import profilePic from "../_static/profile.jpg"
@@ -8,7 +8,7 @@ export function Header() {
     <header className="w-full flex flex-col-reverse md:flex-row justify-start md:justify-between items-center mt-4 md:mb-6">
       <section className="flex flex-col h-full gap-4  ">
         <div>
-          <h2 className={`mb-0 tracking-normal`}>Gajendrasingh Dawar</h2>
+          <h2 className={`mb-0 tracking-normal text-slate12`}>Gajendrasingh Dawar</h2>
           <div className="w-full flex items-center justify-center md:justify-start gap-2 mt-2">
             <section className="mb-1 md:mb-0">
               <Home2 />
@@ -21,7 +21,7 @@ export function Header() {
             <Link
               key={item.link}
               href={item.link}
-              className="rounded-lg p-1 border hover:border-yellow-900 hover:bg-yellow2 border-yellow-800 cursor-pointer h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center mr-2 transition duration-300"
+              className="rounded-lg p-1 border hover:border-yellow-900 hover:bg-yellow2 border-yellow-800 cursor-pointer h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center mr-2 transition duration-300 bg-grass3 text-grass12 hover:text-grass7"
               target="_blank"
               aria-label={`this is my ${item.name} link`}
             >
@@ -37,7 +37,9 @@ export function Header() {
 
 function ProfileSection() {
   return (
-    <section className="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
+    <section
+      className="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center rounded-lg overflow-hidden text-slate2"
+     >
       <Image
         src={profilePic}
         alt="Gajendrasingh Dawar"

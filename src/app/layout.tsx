@@ -1,8 +1,8 @@
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
-import { noto } from "@/fonts/font";
-import { Footer } from "@/components/Footer";
+import { noto } from "../_fonts/font";
+import { Footer } from "../_components/Footer";
 
 export const metadata = {
   title: "Gajendrasingh Dawar",

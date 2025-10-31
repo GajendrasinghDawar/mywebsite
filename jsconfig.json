@@ -1,15 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/components/*": [
-        "./src/app/_components/*"
-      ],
-      "@/static/*": [
-        "./src/app/_static/*"
-      ],
-      "@/fonts/*": [
-        "./src/app/_fonts/*"
-      ],
+      "@/components/*": ["./src/_components/*"],
+      "@/static/*": ["./src/_static/*"],
+      "@/fonts/*": ["./src/_fonts/*"]
     }
   }
 }

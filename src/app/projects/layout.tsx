@@ -1,4 +1,4 @@
-import { BackHomeLink } from "@/components/BackHomeLink";
+import { BackHomeLink } from "../../_components/BackHomeLink";
 
 export default function ProjectLayout({ children }) {
   return (

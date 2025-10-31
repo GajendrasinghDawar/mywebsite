@@ -19,9 +19,10 @@
       }
     ],
     "paths": {
-      "@/components/*": ["./src/app/_components/*"],
-      "@/static/*": ["./src/app/_static/*"],
-      "@/fonts/*": ["./src/app/_fonts/*"]
+      "@/components/*": ["./src/_components/*"],
+      "@/static/*": ["./src/_static/*"],
+      "@/fonts/*": ["./src/_fonts/*"],
+      "@/utils/*": ["./src/_utils/*"]
     }
   },
   "include": [
@@ -30,7 +31,8 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "postcss.config.mjs"
   ],
   "exclude": ["node_modules"]
 }
