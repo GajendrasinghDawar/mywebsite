@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className="font-sans">
         <div className="mx-auto max-w-2xl px-6 md:px-0">
           <Navigation />
-          <main className="min-h-[60vh]">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
         <Analytics />
