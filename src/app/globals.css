@@ -4,11 +4,11 @@
 
 @layer base {
   html {
-    @apply antialiased;
+    @apply antialiased overflow-x-hidden;
   }
 
   body {
-    @apply bg-slate1 text-slate11 selection:bg-crimsonA3 selection:text-slate12;
+    @apply bg-slate1 text-slate11 selection:bg-crimsonA3 selection:text-slate12 overflow-x-hidden;
   }
 
   h1,
