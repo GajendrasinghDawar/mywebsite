@@ -2,7 +2,7 @@ import Link from "next/link"
 
 function WaveBackground() {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+    <div className="fixed inset-0 w-screen h-screen overflow-hidden pointer-events-none -z-10">
       <svg
         className="absolute w-full h-full"
         viewBox="0 0 1600 800"
@@ -58,8 +58,9 @@ function WaveBackground() {
 
 export default function HomePage() {
   return (
-    <div className="relative py-16 md:py-24">
+    <>
       <WaveBackground />
+      <div className="relative z-10 py-16 md:py-24">
       <h1 className="text-3xl md:text-4xl font-semibold text-slate12 tracking-tight mb-4">
         Gajendrasingh Dawar
       </h1>
@@ -107,6 +108,7 @@ export default function HomePage() {
           LinkedIn
         </Link>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
