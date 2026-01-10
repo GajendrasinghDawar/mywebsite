@@ -1,28 +1,34 @@
-import "./globals.css";
+import "./globals.css"
 
-import { Analytics } from "@vercel/analytics/react";
-import { noto } from "../_fonts/font";
-import { Footer } from "../_components/Footer";
+import { Analytics } from "@vercel/analytics/react"
+import { inter, mono, devanagari } from "../_fonts/font"
+import { Navigation } from "../_components/Navigation"
+import { Footer } from "../_components/Footer"
 
 export const metadata = {
   title: "Gajendrasingh Dawar",
   description:
-    "Personal website of Gajendrasingh Dawar, a web developer skilled in Javascript(typescript) and web technologies such as Reactjs,Nodejs. based in Indore, (M.P.) India.",
-};
+    "Full Stack Developer building web applications with Next.js, Node.js, and AI. Based in Indore, India.",
+}
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html
       lang="en"
-      className={`relative inset-0 z-0 bg-fixed bg-center bg-cover h-full ${noto.variable} ${noto.className}`}
+      className={`${inter.variable} ${mono.variable} ${devanagari.variable}`}
     >
-      <body>
-        <main className="md:mx-auto whitespace-normal  md:max-w-2xl px-4 md:px-0 ">
-          {children}
-        </main>
-        <Footer />
+      <body className="font-sans">
+        <div className="mx-auto max-w-2xl px-6 md:px-0">
+          <Navigation />
+          <main className="min-h-[60vh]">{children}</main>
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>
-  );
+  )
 }
