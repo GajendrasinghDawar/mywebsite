@@ -71,35 +71,37 @@ const groupedResources = resources.reduce(
 
 export default function LibraryPage() {
   return (
-    <div className="py-8">
-      <h1 className="text-2xl font-semibold text-slate12 tracking-tight mb-2">
+    <div className="py-6 md:py-8">
+      <h1 className="text-xl md:text-2xl font-semibold text-slate12 tracking-tight mb-1.5 md:mb-2">
         Library
       </h1>
-      <p className="text-slate11 mb-8">
+      <p className="text-sm md:text-base text-slate11 mb-6 md:mb-8">
         Resources I've learned from and recommend.
       </p>
 
       {Object.entries(groupedResources).map(([category, items]) => (
-        <div key={category} className="mb-10">
-          <h2 className="text-xs font-medium text-slate9 uppercase tracking-wider mb-4">
+        <div key={category} className="mb-8 md:mb-10">
+          <h2 className="text-[10px] md:text-xs font-medium text-slate9 uppercase tracking-wider mb-3 md:mb-4">
             {category}
           </h2>
-          <div className="space-y-1">
+          <div>
             {items.map((resource) => (
               <Link
                 key={resource.title}
                 href={resource.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start justify-between py-3 border-b border-slate3 last:border-b-0 no-underline"
+                className="group flex items-start justify-between py-3 md:py-4 border-b border-slate3 last:border-b-0 no-underline active:opacity-70 transition-opacity"
               >
-                <div>
+                <div className="min-w-0 flex-1 pr-3">
                   <h3 className="text-sm font-medium text-slate12 group-hover:text-crimson11 transition-colors mb-0.5">
                     {resource.title}
                   </h3>
-                  <p className="text-sm text-slate10">{resource.description}</p>
+                  <p className="text-xs md:text-sm text-slate10 leading-relaxed">
+                    {resource.description}
+                  </p>
                 </div>
-                <span className="text-slate8 group-hover:text-slate11 transition-colors text-xs shrink-0 ml-4">
+                <span className="text-slate8 group-hover:text-slate11 transition-colors text-xs shrink-0 mt-0.5">
                   ↗
                 </span>
               </Link>
