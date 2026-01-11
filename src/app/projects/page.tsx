@@ -17,7 +17,7 @@ const projects: Project[] = [
     description:
       "AI-powered application with data streaming and real-time features.",
     href: "/projects/ahem",
-    stack: ["Next.js", "Node.js", "AI", "Streaming"],
+    stack: ["Next.js", "Node.js", "AI Engineering", "Typescript"],
   },
 ];
 
@@ -26,13 +26,13 @@ const archivedProjects: Project[] = [
     title: "Forum Application",
     description: "Reddit like app for posting threads and commenting.",
     href: "/projects/forum-app",
-    stack: ["React", "Node.js", "PostgreSQL"],
+    stack: ["React", "Node.js", "PostgreSQL", "Laravel"],
   },
   {
     title: "Note Taking App",
     description: "Progressive web app for taking notes, built with React.",
     href: "/projects/note-taking-app",
-    stack: ["React", "PWA", "IndexedDB"],
+    stack: ["React", "PWA", "IndexedDB", "offline"],
   },
 ];
 
