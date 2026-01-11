@@ -2,17 +2,16 @@ export function Footer() {
   return (
     <footer className="mt-16 md:mt-24 py-6 md:py-8 text-center px-6 md:px-0">
       <div className="mx-auto max-w-2xl">
-        <p className="text-xs md:text-sm italic leading-relaxed text-slate9">
-          &ldquo;The woods are lovely, dark and deep,
-          <br />
-          But I have promises to keep,
+        <p className="text-xs md:text-sm italic leading-relaxed text-slate10">
+          &ldquo;The woods are lovely, dark and deep, But I have promises to
+          keep,
           <br />
           And miles to go before I sleep.&rdquo;
         </p>
-        <p className="mt-2 md:mt-3 text-[10px] md:text-xs text-slate8">
+        <p className="mt-2 md:mt-3 text-[10px] md:text-xs text-slate10/80">
           — Robert Frost
         </p>
       </div>
     </footer>
-  )
+  );
 }

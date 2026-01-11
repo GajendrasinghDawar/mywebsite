@@ -28,10 +28,10 @@ export default function RootLayout({
         min-h-svh
         w-full
         relative
-        bg-slate1/98 text-slate11 selection:bg-crimsonA3 selection:text-slate12
+        bg-slate1/96 text-slate11 selection:bg-crimsonA3 selection:text-slate12
         `}
       >
-        <div className="w-full h-full flex flex-col">
+        <div className="min-h-svh flex flex-col">
           <Navigation />
           <main className="flex-1 w-full max-w-2xl mx-auto px-6 md:px-0">
             {children}

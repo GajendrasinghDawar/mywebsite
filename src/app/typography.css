@@ -185,4 +185,17 @@
   .prose > :last-child {
     margin-bottom: 0;
   }
+
+  /* Opt-out: reset prose styles for interactive elements */
+  .prose .not-prose,
+  .not-prose {
+    all: revert;
+    color: inherit;
+  }
+
+  .not-prose *,
+  .prose .not-prose * {
+    all: revert;
+    color: inherit;
+  }
 }
