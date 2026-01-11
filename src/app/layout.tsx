@@ -32,9 +32,9 @@ export default function RootLayout({
         bg-slate1/98 text-slate11 selection:bg-crimsonA3 selection:text-slate12
         `}
       >
-        <div className="w-full h-full">
+        <div className="w-full h-full flex flex-col">
           <Navigation />
-          <main className="mx-auto max-w-2xl px-6 md:px-0 border">
+          <main className="flex-1 mx-auto max-w-2xl px-6 md:px-0 border">
             {children}
           </main>
           <Footer />

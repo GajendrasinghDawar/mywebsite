@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="relative z-10 py-12 md:py-24">
+    <div className="relative z-10 py-12 md:py-24  w-full h-full">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate12 tracking-tight mb-3 md:mb-4">
         Gajendrasingh Dawar
       </h1>
