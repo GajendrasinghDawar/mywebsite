@@ -27,14 +27,13 @@ export default function RootLayout({
         antialiased
         min-h-svh
         w-full
-        grid
         relative
         bg-slate1/98 text-slate11 selection:bg-crimsonA3 selection:text-slate12
         `}
       >
         <div className="w-full h-full flex flex-col">
           <Navigation />
-          <main className="flex-1 mx-auto max-w-2xl px-6 md:px-0 border">
+          <main className="flex-1 w-full max-w-2xl mx-auto px-6 md:px-0">
             {children}
           </main>
           <Footer />
