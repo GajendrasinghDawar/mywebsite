@@ -5,25 +5,46 @@ export default function HomePage() {
   return (
     <div className="w-full flex-1 flex flex-col">
       <div className="flex-1 py-12 md:py-24">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate12 tracking-tight mb-3 md:mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate12 tracking-tight mb-3 md:mb-4 -ml-0.5">
           Gajendrasingh Dawar
         </h1>
 
         <p className="text-base md:text-lg text-slate11 mb-5 md:mb-6">
-          Full Stack Developer
+          Full Stack Web Developer
         </p>
 
-        <p className="text-sm md:text-base text-slate11 leading-relaxed md:leading-relaxed max-w-md md:max-w-lg mb-6 md:mb-8">
-          I build web applications using{" "}
+        <p className="text-sm md:text-base text-slate11 leading-relaxed md:leading-relaxed max-w-md md:max-w-lg ">
+          I create web applications using{" "}
           <span className="text-slate12">Next.js</span>,{" "}
-          <span className="text-slate12">Node.js</span>, and{" "}
-          <span className="text-slate12">AI</span>. My focus is on clean code,
-          understanding systems, and solving real problems.
+          <span className="text-slate12">Node.js</span>,{" "}
+          <span className="text-slate12">TypeScript</span> and plus do
+          <span className="text-slate12"> AI Engineering</span>.
         </p>
 
+        <p className="mb-6 md:mb-8">
+          My focus is on creating{" "}
+          <span className="text-slate12 font-medium">Agentic AI</span> web
+          applications and integrating llms for better user experiences. I am
+          also exploring{" "}
+          <span className="text-slate12 font-medium">Local-First</span> software
+          architecture.
+        </p>
         <div className="flex flex-wrap items-center gap-2 md:gap-3 text-xs md:text-sm mb-10 md:mb-12">
           <span className="inline-flex items-center gap-1.5 md:gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-jade9" />
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className=" stroke-jade9"
+            >
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
             <span className="text-slate11">Open for opportunities</span>
           </span>
           <span className="text-slate6">·</span>
