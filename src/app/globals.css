@@ -3,6 +3,30 @@
 @import "./typography.css";
 
 @layer base {
+  html {
+    color-scheme: dark;
+    scrollbar-gutter: stable;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--color-slate1);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-slate1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-slate6);
+    border: 3px solid var(--color-slate1);
+    border-radius: 99px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-slate7);
+  }
+
   h1,
   h2,
   h3,

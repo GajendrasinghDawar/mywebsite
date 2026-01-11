@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${mono.variable} ${devanagari.variable}`}
+      className={`${inter.variable} ${mono.variable} ${devanagari.variable} bg-slate1/96`}
     >
       <body
         className={`

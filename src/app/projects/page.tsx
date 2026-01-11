@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import { motion, AnimatePresence } from "motion/react";
+import { useState } from "react"
+import Link from "next/link"
+import { motion, AnimatePresence } from "motion/react"
 
 interface Project {
-  title: string;
-  description: string;
-  href: string;
-  stack?: string[];
+  title: string
+  description: string
+  href: string
+  stack?: string[]
 }
 
 const projects: Project[] = [
@@ -19,7 +19,7 @@ const projects: Project[] = [
     href: "/projects/ahem",
     stack: ["Next.js", "Node.js", "AI", "Streaming"],
   },
-];
+]
 
 const archivedProjects: Project[] = [
   {
@@ -34,13 +34,13 @@ const archivedProjects: Project[] = [
     href: "/projects/note-taking-app",
     stack: ["React", "PWA", "IndexedDB"],
   },
-];
+]
 
 function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={project.href}
-      className="group not-prose block py-5 border-b border-slate3 last:border-b-0 no-underline"
+      className="group not-prose block py-5 border-b border-slate3 last:border-b-0 no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crimson8 focus-visible:ring-offset-2 focus-visible:ring-offset-slate1 rounded-sm"
     >
       <div className="flex items-start justify-between gap-4">
         <div>
@@ -61,30 +61,33 @@ function ProjectCard({ project }: { project: Project }) {
             </div>
           )}
         </div>
-        <span className="text-slate7 group-hover:text-slate11 transition-colors shrink-0">
+        <span
+          className="text-slate7 group-hover:text-slate11 transition-colors shrink-0"
+          aria-hidden="true"
+        >
           →
         </span>
       </div>
     </Link>
-  );
+  )
 }
 
 function ArchivedCard({ project }: { project: Project }) {
   return (
     <Link
       href={project.href}
-      className="group not-prose block py-4 border-b border-slate3 last:border-b-0 no-underline"
+      className="group not-prose block py-4 border-b border-slate3 last:border-b-0 no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crimson8 focus-visible:ring-offset-2 focus-visible:ring-offset-slate1 rounded-sm"
     >
       <h4 className="text-sm text-slate10 group-hover:text-slate11 transition-colors mb-1">
         {project.title}
       </h4>
       <p className="text-xs text-slate9">{project.description}</p>
     </Link>
-  );
+  )
 }
 
 export default function ProjectsPage() {
-  const [showArchived, setShowArchived] = useState(false);
+  const [showArchived, setShowArchived] = useState(false)
 
   return (
     <>
@@ -99,13 +102,19 @@ export default function ProjectsPage() {
 
       <div className="not-prose border-t border-slate3 pt-8">
         <button
+          type="button"
           onClick={() => setShowArchived(!showArchived)}
-          className="flex items-center gap-2.5 text-sm text-slate9 hover:text-slate11 transition-colors cursor-pointer"
+          aria-expanded={showArchived}
+          className="flex items-center gap-2.5 text-sm text-slate9 hover:text-slate11 transition-colors cursor-pointer touch-manipulation focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crimson8 focus-visible:ring-offset-2 focus-visible:ring-offset-slate1 rounded-sm -ml-0.5 pl-0.5"
         >
           <motion.span
             animate={{ rotate: showArchived ? 90 : 0 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{
+              duration: 0.15,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
             className="text-slate7"
+            aria-hidden="true"
           >
             →
           </motion.span>
@@ -115,11 +124,14 @@ export default function ProjectsPage() {
         <AnimatePresence initial={false}>
           {showArchived && (
             <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
-              className="overflow-hidden"
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{
+                duration: 0.2,
+                ease: [0.25, 0.1, 0.25, 1],
+              }}
+              className="will-change-transform"
             >
               <div className="pt-6">
                 {archivedProjects.map((project) => (
@@ -131,5 +143,5 @@ export default function ProjectsPage() {
         </AnimatePresence>
       </div>
     </>
-  );
+  )
 }
