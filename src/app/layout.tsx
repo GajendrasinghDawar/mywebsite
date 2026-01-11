@@ -1,34 +1,46 @@
-import "./globals.css"
+import "./globals.css";
 
-import { Analytics } from "@vercel/analytics/react"
-import { inter, mono, devanagari } from "../_fonts/font"
-import { Navigation } from "../_components/Navigation"
-import { Footer } from "../_components/Footer"
+import { Analytics } from "@vercel/analytics/react";
+import { inter, mono, devanagari } from "../_fonts/font";
+import { Navigation } from "../_components/Navigation";
+import { Footer } from "../_components/Footer";
 
 export const metadata = {
   title: "Gajendrasingh Dawar",
   description:
     "Full Stack Developer building web applications with Next.js, Node.js, and AI. Based in Indore, India.",
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
       lang="en"
       className={`${inter.variable} ${mono.variable} ${devanagari.variable}`}
     >
-      <body className="font-sans">
-        <div className="mx-auto max-w-2xl px-6 md:px-0">
+      <body
+        className={`
+        font-sans
+        antialiased
+        min-h-svh
+        w-full
+        grid
+        relative
+        bg-slate1/98 text-slate11 selection:bg-crimsonA3 selection:text-slate12
+        `}
+      >
+        <div className="w-full h-full">
           <Navigation />
-          <main>{children}</main>
+          <main className="mx-auto max-w-2xl px-6 md:px-0 border">
+            {children}
+          </main>
           <Footer />
         </div>
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

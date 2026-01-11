@@ -3,14 +3,6 @@
 @import "./typography.css";
 
 @layer base {
-  html {
-    @apply antialiased overflow-x-hidden;
-  }
-
-  body {
-    @apply bg-slate1 text-slate11 selection:bg-crimsonA3 selection:text-slate12 overflow-x-hidden;
-  }
-
   h1,
   h2,
   h3,
