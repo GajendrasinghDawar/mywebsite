@@ -1,10 +1,10 @@
-import Link from "next/link"
+import Link from "next/link";
 
 interface Resource {
-  title: string
-  description: string
-  href: string
-  category: string
+  title: string;
+  description: string;
+  href: string;
+  category: string;
 }
 
 const resources: Resource[] = [
@@ -56,18 +56,15 @@ const resources: Resource[] = [
     href: "https://www.refactoringui.com",
     category: "Design",
   },
-]
+];
 
-const groupedResources = resources.reduce(
-  (acc, resource) => {
-    if (!acc[resource.category]) {
-      acc[resource.category] = []
-    }
-    acc[resource.category].push(resource)
-    return acc
-  },
-  {} as Record<string, Resource[]>
-)
+const groupedResources = resources.reduce((acc, resource) => {
+  if (!acc[resource.category]) {
+    acc[resource.category] = [];
+  }
+  acc[resource.category].push(resource);
+  return acc;
+}, {} as Record<string, Resource[]>);
 
 export default function LibraryPage() {
   return (
@@ -76,7 +73,7 @@ export default function LibraryPage() {
         Library
       </h1>
       <p className="text-sm md:text-base text-slate11 mb-6 md:mb-8">
-        Resources I've learned from and recommend.
+        Resources I&apos;ve learned from and recommend.
       </p>
 
       {Object.entries(groupedResources).map(([category, items]) => (
@@ -110,5 +107,5 @@ export default function LibraryPage() {
         </div>
       ))}
     </div>
-  )
+  );
 }

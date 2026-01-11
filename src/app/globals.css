@@ -52,16 +52,8 @@
     @apply text-slate11 leading-relaxed;
   }
 
-  a {
-    @apply text-slate12 transition-colors duration-150;
-  }
-
-  a:hover {
-    @apply text-crimson11;
-  }
-
   ::selection {
-    @apply bg-crimsonA3 text-slate12;
+    @apply bg-crimson3 text-crimson12;
   }
 }
 
@@ -71,6 +63,6 @@
   }
 
   .nav-link-active {
-    @apply text-crimson11;
+    @apply text-slate12;
   }
 }

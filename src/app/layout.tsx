@@ -33,10 +33,9 @@ export default function RootLayout({
       >
         <div className="min-h-svh flex flex-col">
           <Navigation />
-          <main className="flex-1 w-full max-w-2xl mx-auto px-6 md:px-0">
+          <main className="flex-1 w-full max-w-2xl mx-auto px-6 md:px-0 flex flex-col">
             {children}
           </main>
-          <Footer />
         </div>
         <Analytics />
       </body>

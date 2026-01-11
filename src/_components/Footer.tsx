@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="mt-16 md:mt-24 py-6 md:py-8 text-center px-6 md:px-0">
+    <footer className="mt-auto pb-6 md:pb-4   text-center px-6 md:px-0 ">
       <div className="mx-auto max-w-2xl">
         <p className="text-xs md:text-sm italic leading-relaxed text-slate10">
           &ldquo;The woods are lovely, dark and deep, But I have promises to

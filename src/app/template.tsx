@@ -1,5 +1,5 @@
-import { Transition } from "../_components/Transition"
+import { Transition } from "../_components/Transition";
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  return <Transition>{children}</Transition>
+  return <Transition>{children}</Transition>;
 }
