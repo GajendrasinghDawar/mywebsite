@@ -9,51 +9,62 @@ interface Resource {
 
 const resources: Resource[] = [
   {
-    title: "MDN Web Docs",
-    description: "Comprehensive documentation for web technologies.",
-    href: "https://developer.mozilla.org",
-    category: "Documentation",
+    title: "High Performance Browser Networking",
+    description:
+      "This book is required reading for anyone who want to learn about web performance and networking in general.",
+    href: "https://hpbn.co/",
+    category: "Books",
   },
   {
-    title: "React Documentation",
-    description: "Official React docs with interactive examples.",
-    href: "https://react.dev",
-    category: "Documentation",
+    title: "Local-first software",
+    description: "A eassy about building software that works offline.",
+    href: "https://www.inkandswitch.com/essay/local-first/",
+    category: "Essays ",
   },
   {
-    title: "Next.js Documentation",
-    description: "Learn Next.js features and API.",
-    href: "https://nextjs.org/docs",
-    category: "Documentation",
+    title: "A CRDT for Rich-Text Collaboration",
+    description:
+      "A CRDT(an algorithm and data structure) for rich-text collaboration.",
+    href: "https://www.inkandswitch.com/peritext/",
+    category: "Essays ",
   },
   {
-    title: "Node.js Documentation",
-    description: "Official Node.js API reference.",
-    href: "https://nodejs.org/docs",
-    category: "Documentation",
+    title: "Agents",
+    description: "Learn about agents and what they are. Author is Chip Huyen.",
+    href: "https://huyenchip.com/2025/01/07/agents.html",
+    category: "Articles",
   },
   {
-    title: "TypeScript Handbook",
-    description: "Learn TypeScript from the official handbook.",
-    href: "https://www.typescriptlang.org/docs",
-    category: "Documentation",
+    title:
+      "The Logs What every software engineer should know about real-time data's unifying abstraction",
+    description:
+      "Jay Kreps on how the 'log'—an append-only, ordered sequence of records—serves as elegant solution for distributed systems and real-time stream processing.",
+    href: "https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying",
+    category: "Articles",
   },
   {
-    title: "Patterns.dev",
-    description: "Modern web app design patterns.",
-    href: "https://patterns.dev",
+    title: "How Imports Work in RSC",
+    description: "Learn about how imports work in React Server Components.",
+    href: "https://overreacted.io/how-imports-work-in-rsc/",
+    category: "Articles",
+  },
+  {
+    title: "JSX Over The Wire",
+    description: "Learn about how JSX is sent from server to client.",
+    href: "https://overreacted.io/jsx-over-the-wire/",
+    category: "Articles",
+  },
+  {
+    title: "Learn PWA",
+    description:
+      "A course that breaks down every aspect of modern progressive web app development.",
+    href: "https://web.dev/learn/pwa",
     category: "Learning",
   },
   {
-    title: "web.dev",
-    description: "Google's resource for modern web development.",
-    href: "https://web.dev",
-    category: "Learning",
-  },
-  {
-    title: "Refactoring UI",
-    description: "Design tips for developers.",
-    href: "https://www.refactoringui.com",
+    title: "Good vs Great Animations",
+    description: "Learn when to add an animation.",
+    href: "https://emilkowal.ski/ui/good-vs-great-animations",
     category: "Design",
   },
 ];
@@ -73,7 +84,7 @@ export default function LibraryPage() {
         Library
       </h1>
       <p className="text-sm md:text-base text-slate11 mb-6 md:mb-8">
-        Resources I&apos;ve learned from and recommend.
+        Resources I&apos;ve learned and learning from. recommend exploring them.
       </p>
 
       {Object.entries(groupedResources).map(([category, items]) => (

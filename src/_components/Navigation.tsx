@@ -25,7 +25,6 @@ export function Navigation() {
             return (
               <li key={item.href}>
                 <Link
-                  prefetch
                   href={item.href}
                   className={`text-sm transition-colors duration-150 no-underline ${
                     isActive
