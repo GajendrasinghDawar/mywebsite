@@ -9,7 +9,7 @@ export function Couplet({ children, author }: CoupletProps) {
       <div className="font-devanagari text-base md:text-lg text-slate11 leading-loose whitespace-pre-line [&>p]:m-0">
         {children}
       </div>
-      <span className="block mt-4 md:mt-5 text-xs text-amber12/80">
+      <span className="block mt-4 md:mt-5 text-xs text-amber10/65">
         — {author}
       </span>
     </article>

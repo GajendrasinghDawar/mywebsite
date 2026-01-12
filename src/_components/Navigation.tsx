@@ -28,7 +28,7 @@ export function Navigation() {
                   href={item.href}
                   className={`text-sm transition-colors duration-150 no-underline ${
                     isActive
-                      ? "text-crimson11"
+                      ? "text-crimson10"
                       : "text-slate11 hover:text-slate12"
                   }`}
                 >
