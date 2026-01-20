@@ -1,0 +1,52 @@
+import { Resource } from "@/components/Resource";
+import { ResourceGroup } from "@/components/ResourceGroup";
+
+export const metadata = {
+  title: "Library",
+  description: "Resources I've learned and learning from.",
+};
+
+<ResourceGroup category="Books">
+  <Resource title="High Performance Browser Networking" href="https://hpbn.co/">
+    A book on web networking and protocols (HTTP, HTTP/2, SSE, TCP) that also builds strong general networking fundamentals.
+  </Resource>
+  <Resource title="The Bullshit Machines" href="https://thebullshitmachines.com/">
+    A book that teaches how to evaluate LLMs, like these are just algorithms not miracles. Explains how to adopt these tools thoughtfully.
+  </Resource>
+</ResourceGroup>
+
+<ResourceGroup category="Essays">
+  <Resource title="Local-first software" href="https://www.inkandswitch.com/essay/local-first/">
+    An essay about building software that works offline.
+  </Resource>
+  <Resource title="A CRDT for Rich-Text Collaboration" href="https://www.inkandswitch.com/peritext/">
+    A CRDT (an algorithm and data structure) for rich-text collaboration.
+  </Resource>
+</ResourceGroup>
+
+<ResourceGroup category="Articles">
+  <Resource title="Agents" href="https://huyenchip.com/2025/01/07/agents.html">
+    Learn about agents and what they are. Author is Chip Huyen.
+  </Resource>
+  <Resource title="The Logs: What every software engineer should know about real-time data's unifying abstraction" href="https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying">
+    Jay Kreps on how the 'log'—an append-only, ordered sequence of records—serves as elegant solution for distributed systems and real-time stream processing.
+  </Resource>
+  <Resource title="How Imports Work in RSC" href="https://overreacted.io/how-imports-work-in-rsc/">
+    Learn about how imports work in React Server Components.
+  </Resource>
+  <Resource title="JSX Over The Wire" href="https://overreacted.io/jsx-over-the-wire/">
+    Learn about how JSX is sent from server to client.
+  </Resource>
+</ResourceGroup>
+
+<ResourceGroup category="Learning">
+  <Resource title="Learn PWA" href="https://web.dev/learn/pwa">
+    A course that breaks down every aspect of modern progressive web app development.
+  </Resource>
+</ResourceGroup>
+
+<ResourceGroup category="Design">
+  <Resource title="Good vs Great Animations" href="https://emilkowal.ski/ui/good-vs-great-animations">
+    Learn when to add an animation.
+  </Resource>
+</ResourceGroup>
