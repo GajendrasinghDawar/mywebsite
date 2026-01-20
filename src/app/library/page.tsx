@@ -4,14 +4,14 @@ interface Resource {
   title: string;
   description: string;
   href: string;
-  category: string;
+  category: "Books" | "Essays" | "Articles" | "Learning" | "Design";
 }
 
 const resources: Resource[] = [
   {
     title: "High Performance Browser Networking",
     description:
-      "This book is required reading for anyone who want to learn about web performance and networking in general.",
+      "A book on web networking and protocols (HTTP, HTTP/2, SSE, TCP) that also builds strong general networking fundamentals.",
     href: "https://hpbn.co/",
     category: "Books",
   },
@@ -19,14 +19,14 @@ const resources: Resource[] = [
     title: "Local-first software",
     description: "A eassy about building software that works offline.",
     href: "https://www.inkandswitch.com/essay/local-first/",
-    category: "Essays ",
+    category: "Essays",
   },
   {
     title: "A CRDT for Rich-Text Collaboration",
     description:
       "A CRDT(an algorithm and data structure) for rich-text collaboration.",
     href: "https://www.inkandswitch.com/peritext/",
-    category: "Essays ",
+    category: "Essays",
   },
   {
     title: "Agents",
@@ -67,15 +67,25 @@ const resources: Resource[] = [
     href: "https://emilkowal.ski/ui/good-vs-great-animations",
     category: "Design",
   },
+  {
+    title: "The Bullshit Machines",
+    description:
+      "A book that teaches how to evaluate LLMs, like these are just algorithms not miracles. Explains how to adopt these tools thoughtfully.",
+    href: "https://thebullshitmachines.com/",
+    category: "Books",
+  },
 ];
 
-const groupedResources = resources.reduce((acc, resource) => {
-  if (!acc[resource.category]) {
-    acc[resource.category] = [];
-  }
-  acc[resource.category].push(resource);
-  return acc;
-}, {} as Record<string, Resource[]>);
+const groupedResources = resources.reduce(
+  (acc, resource) => {
+    if (!acc[resource.category]) {
+      acc[resource.category] = [];
+    }
+    acc[resource.category].push(resource);
+    return acc;
+  },
+  {} as Record<string, Resource[]>,
+);
 
 export default function LibraryPage() {
   return (
