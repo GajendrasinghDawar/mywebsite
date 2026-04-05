@@ -10,7 +10,7 @@ export default function HomePage() {
         </h1>
 
         <p className="text-base md:text-lg text-slate11 mb-5 md:mb-6">
-          Full Stack Web Developer
+          Full Stack Developer
         </p>
 
         <p className="text-sm md:text-base text-slate11 leading-relaxed md:leading-relaxed max-w-md md:max-w-lg ">
@@ -22,12 +22,10 @@ export default function HomePage() {
         </p>
 
         <p className="mb-6 md:mb-8">
-          My focus is on creating{" "}
-          <span className="text-slate12 font-medium">Agentic AI</span> web
-          applications and integrating llms for better user experiences. I am
-          also exploring{" "}
-          <span className="text-slate12 font-medium">Local-First</span> software
-          architecture.
+          My focus is on creating usable apps in the age of sloppiness. Also has
+          personal interest in
+          <span className="text-slate12 font-medium"> Local-First</span>{" "}
+          software.
         </p>
         <div className="flex flex-wrap items-center gap-2 md:gap-3 text-xs md:text-sm mb-10 md:mb-12">
           <span className="inline-flex items-center gap-1.5 md:gap-2">

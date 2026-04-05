@@ -15,9 +15,15 @@ const projects: Project[] = [
   {
     title: "AHEM",
     description:
-      "AI-powered application with data streaming and real-time features.",
+      "AI-powered chat application like chatgpt with unified models in one UI.",
     href: "/projects/ahem",
-    stack: ["Next.js", "Node.js", "AI Engineering", "Typescript"],
+    stack: [
+      "Next.js",
+      "Node.js",
+      "AI Engineering",
+      "Typescript",
+      "Durable Streams",
+    ],
   },
 ];
 
