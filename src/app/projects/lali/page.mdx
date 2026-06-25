@@ -1,0 +1,39 @@
+import { ExternalLink } from "@/components/ExternalLink"
+import { BackHomeLink } from "@/components/BackHomeLink"
+
+export const metadata = {
+  title: "Projects | Lali",
+}
+
+<BackHomeLink />
+
+# Lali
+
+Lali is a minimal personal AI assistant agent that runs on a server and is controlled through Telegram. It is designed as a minimal but practical agent system that can chat, call tools, execute commands, read and write files, and retain memory across sessions.
+
+## What made it interesting
+
+Lali was built around the idea of a **hackable real-world agent loop** instead of a simple one-shot chatbot. The assistant can reason over a task, call tools, inspect outputs, and continue until the job is complete.
+
+## Features
+
+- Telegram-first conversational interface
+- agent loop with tool calling
+- local command execution with permission checks
+- file read/write 
+- long-term memory notes persisted to disk
+- context compaction for long sessions
+- scheduled heartbeat tasks (daily briefings/reminders)
+- lightweight HTTP API for non-Telegram access
+
+## Tech Highlights
+
+- **Python** core runtime
+- **Azure OpenAI** model integration
+- **Telegram Bot API** for chat channel
+- **Flask** for HTTP endpoint
+- JSONL + Markdown based local persistence
+
+## Links
+
+- <ExternalLink href="https://github.com/gajendrasinghdawar/lali">Source code</ExternalLink>

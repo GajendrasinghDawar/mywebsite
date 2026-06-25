@@ -1,6 +1,6 @@
 import { External } from "./Icons";
 
-export function ExternalLink({ href, children }) {
+export function ExternalLink({ href, children}) {
   return (
     <a
       href={href}

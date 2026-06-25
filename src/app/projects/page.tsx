@@ -13,21 +13,43 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "AHEM",
+    title: "SJSPA College site",
     description:
-      "AI-powered chat application like chatgpt with unified models in one UI.",
-    href: "/projects/ahem",
+      "A modern institutional website and CMS platform for Shri Jain Shwetamber Professional Academy, rebuilt with Next.js and Payload.",
+    href: "/projects/sjspa-new",
     stack: [
       "Next.js",
-      "Node.js",
-      "AI Engineering",
-      "Typescript",
+      "Payload CMS",
+      "React",
+      "Tailwind CSS",
+      "SQLite / libSQL",
+      "Cloudflare R2",
+    ],
+  },
+  {
+    title: "URMI",
+    description:
+      "A personal AI assistant with user-owned state, durable sessions, and model-agnostic memory across interfaces.",
+    href: "/projects/urmi",
+    stack: [
+      "Next.js",
+      "AI SDK",
       "Durable Streams",
+      "Drizzle ORM",
+      "libSQL",
+      "Azure AI",
     ],
   },
 ];
 
 const archivedProjects: Project[] = [
+  {
+    title: "Lali",
+    description:
+      "Personal Telegram AI assistant with tool use, memory, scheduling, and command execution.",
+    href: "/projects/lali",
+    stack: ["Python", "Telegram Bot", "Azure OpenAI", "Flask", "Agentic AI"],
+  },
   {
     title: "Forum Application",
     description: "Reddit like app for posting threads and commenting.",
