@@ -1,0 +1,91 @@
+import Image from "next/image"
+import { ExternalLink } from "@/components/ExternalLink"
+import { BackHomeLink } from "@/components/BackHomeLink"
+
+export const metadata = {
+  title: "Projects | URMI",
+}
+
+<BackHomeLink />
+
+# URMI
+
+<Image
+  src="/urmi0.png"
+  alt="URMI project preview"
+  width={1600}
+  height={900}
+  className="w-full rounded-md border border-slate5 not-prose"
+/>
+
+<Image
+  src="/urmi1.png"
+  alt="URMI project preview"
+  width={1600}
+  height={900}
+  className="w-full rounded-md border border-slate5 not-prose"
+/>
+
+URMI is a full-stack AI workspace focused on a simple idea: **users should own their conversations, memories, artifacts, and connected accounts instead of being locked into a single AI provider or chat interface.**
+
+The application already supports persistent conversations, AI-powered interactions, streaming responses, and a foundation for long-term memory and tool-driven workflows. Rather than treating chat history as disposable, URMI treats user state as durable infrastructure that can be reused across models and future interfaces.
+
+## What I Built
+
+- Multi-model AI chat experience
+- Persistent conversation history
+- User-owned state and memory foundations
+- Streaming AI responses using modern AI SDK patterns
+- Tool-oriented architecture for future workflow automation
+- Structured data persistence for conversations and artifacts
+- Production deployment with a custom domain
+
+## Problem
+
+Most AI applications are provider-centric. Users build context inside a single chat product, but conversations, memories, and generated artifacts become fragmented across different tools and interfaces.
+
+When users switch providers, much of that context is lost.
+
+## Architecture Vision
+
+URMI separates durable user state from model providers.
+
+Instead of treating a model as the source of truth, URMI treats models as replaceable execution engines while preserving:
+
+- conversations
+- memories
+- artifacts
+- connected accounts
+- future knowledge assets
+
+This creates a foundation for a long-term personal intelligence layer that can evolve beyond a single chat interface.
+
+## Key Capabilities
+
+- User-owned conversations, memory, and artifacts
+- Resumable and replayable interaction history
+- Multi-interface continuity (web today, terminal/Telegram in the future)
+- Model portability over shared user state
+- Tool and workflow integration architecture
+- Incremental **LLM Wiki** knowledge-building workflow
+
+## Impact
+
+URMI explores how personal AI systems can move beyond disposable chat sessions and become durable knowledge systems where learning, context, and decision trails compound over time.
+
+## Tech Highlights
+
+- **Next.js + React** application architecture
+- **AI SDK + streaming orchestration** for agentic responses
+- **Durable Streams** for resilient state and replay patterns
+- **Drizzle + libSQL** for structured persistence
+- **Azure AI services** for AI related flows
+- **Modular tool system** for memory, notes, and other workflows
+
+## Links
+
+- <ExternalLink href="https://urmi.dev/">Live demo</ExternalLink>
+
+## Further Reading
+
+- <ExternalLink href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">LLM Wiki — A pattern for building personal knowledge bases using LLMs</ExternalLink>
