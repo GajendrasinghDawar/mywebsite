@@ -1,4 +1,4 @@
-import { External } from "./Icons";
+import { ExternalLink as ExternalLinkIcon } from "lucide-react";
 
 export function ExternalLink({ href, children}) {
   return (
@@ -16,7 +16,7 @@ export function ExternalLink({ href, children}) {
       "
     >
       {children}
-      <External
+      <ExternalLinkIcon
         aria-hidden="true"
         className=" ml-1.5
           h-[0.85em] w-[0.85em] 

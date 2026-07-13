@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
+  { href: "/certifications", label: "Certifications" },
   { href: "/library", label: "Library" },
   { href: "/couplets", label: "Couplets" },
 ];
@@ -15,8 +16,8 @@ export function Navigation() {
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 h-14 bg-slate1/80 backdrop-blur-md">
-      <nav className="h-full max-w-2xl mx-auto px-6 md:px-0 flex items-center">
-        <ul className="flex items-center gap-4 sm:gap-5 md:gap-6 list-none m-0 p-0">
+      <nav className="h-full max-w-2xl mx-auto px-6 md:px-0 flex items-center overflow-x-auto">
+        <ul className="flex items-center gap-4 sm:gap-5 md:gap-6 list-none m-0 p-0 whitespace-nowrap">
           {navItems.map((item) => {
             const isActive =
               pathname === item.href ||

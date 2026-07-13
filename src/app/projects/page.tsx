@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
+import { ArrowRight } from "lucide-react";
 
 interface Project {
   title: string;
@@ -109,12 +110,10 @@ function ProjectCard({
             </div>
           )}
         </div>
-        <span
-          className="text-slate6 group-hover:text-slate9 group-focus-visible:text-slate9 transition-colors shrink-0"
+        <ArrowRight
           aria-hidden="true"
-        >
-          →
-        </span>
+          className="h-4 w-4 shrink-0 text-slate6 transition-colors group-hover:text-slate9 group-focus-visible:text-slate9"
+        />
       </div>
     </Link>
   );
@@ -149,7 +148,7 @@ export default function ProjectsPage() {
               className="text-slate6 group-hover:text-slate8 transition-colors duration-150"
               aria-hidden="true"
             >
-              →
+              <ArrowRight className="h-4 w-4 shrink-0 text-slate6 transition-colors group-hover:text-slate9 group-focus-visible:text-slate9" />
             </motion.span>
             <span>Archived</span>
           </span>

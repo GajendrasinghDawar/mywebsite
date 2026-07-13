@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 interface ResourceProps {
   children: React.ReactNode;
@@ -22,9 +23,10 @@ export function Resource({ children, title, href }: ResourceProps) {
           {children}
         </div>
       </div>
-      <span className="text-slate8 group-hover:text-slate11 transition-colors text-xs shrink-0 mt-0.5">
-        ↗
-      </span>
+      <ExternalLink
+        aria-hidden="true"
+        className="mt-0.5 h-3.5 w-3.5 shrink-0 text-slate10/50 group-hover:text-slate11"
+      />
     </Link>
   );
 }

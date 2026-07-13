@@ -193,8 +193,8 @@
     color: inherit;
   }
 
-  .not-prose *,
-  .prose .not-prose * {
+  .not-prose *:not(svg, svg *),
+  .prose .not-prose *:not(svg, svg *) {
     all: revert;
     color: inherit;
   }
