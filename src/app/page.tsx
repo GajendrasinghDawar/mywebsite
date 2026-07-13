@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className="w-full flex-1 flex flex-col">
       <div className="flex-1 py-12 md:py-24">
         <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-8 md:grid-cols-[minmax(0,1fr)_11rem] md:gap-8">
-          <figure className="w-28 overflow-hidden rounded-lg border border-slate5 bg-slate2 md:order-2 md:w-44">
+          <figure className="w-28 overflow-hidden rounded-md border-0 bg-slate2 md:order-2 md:w-44">
             <Image
               src="/me.webp"
               alt="Portrait of Gajendrasingh Dawar"
