@@ -14,20 +14,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "SJSPA College site",
-    description:
-      "A modern institutional website and CMS platform for Shri Jain Shwetamber Professional Academy, rebuilt with Next.js and Payload.",
-    href: "/projects/sjspa-new",
-    stack: [
-      "Next.js",
-      "Payload CMS",
-      "React",
-      "Tailwind CSS",
-      "SQLite / libSQL",
-      "Cloudflare R2",
-    ],
-  },
-  {
     title: "URMI",
     description:
       "A personal AI assistant with user-owned state, durable sessions, and model-agnostic memory across interfaces.",
@@ -39,6 +25,20 @@ const projects: Project[] = [
       "Drizzle ORM",
       "libSQL",
       "Azure AI",
+    ],
+  },
+  {
+    title: "SJSPA College site",
+    description:
+      "A modern institutional website and CMS platform for Shri Jain Shwetamber Professional Academy, rebuilt with Next.js and Payload.",
+    href: "/projects/sjspa-new",
+    stack: [
+      "Next.js",
+      "Payload CMS",
+      "React",
+      "Tailwind CSS",
+      "SQLite / libSQL",
+      "Cloudflare R2",
     ],
   },
 ];
@@ -102,7 +102,7 @@ function ProjectCard({
               {project.stack.map((tech) => (
                 <span
                   key={tech}
-                  className="text-xs text-slate9 bg-slate3 px-2 py-0.5 rounded"
+                  className="text-xs text-slate9 bg-slate3 px-2 py-0.5 rounded-md"
                 >
                   {tech}
                 </span>
@@ -133,7 +133,7 @@ export default function ProjectsPage() {
         ))}
       </div>
 
-      <div className="not-prose pt-4 border-0 border-t border-dotted border-slate6">
+      <div className="not-prose pt-4 border-0 border-t border-dashed border-slate5">
         <button
           type="button"
           onClick={() => setShowArchived(!showArchived)}
