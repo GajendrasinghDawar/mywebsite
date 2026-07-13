@@ -1,1 +1,1 @@
-Personal website of Gajendrasingh Dawar, a web developer skilled in Javascript and with a foundation in  backend   technologies(Nodejs, Python, PHP). based in Indore, (M.P.) India.
+Personal website of Gajendrasingh Dawar — full-stack developer from Indore, India. Builds web apps with Next.js and TypeScript. exploring AI engineering, And how to build durable AI agents and local-first software.
